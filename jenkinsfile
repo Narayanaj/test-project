@@ -3,7 +3,7 @@ node {
     checkout scm
       env.PATH = "${tool 'M3'}/bin:${env.PATH}"
         stage 'Build'
-	  def pom = readMavenPom file: '${WORKSPACE}/sbi/pom.xml'
+	  def pom = readMavenPom file: '/sbi/pom.xml'
 	    echo "${pom}"
 	      sh "mvn -DskipTests=true clean install"
      }
