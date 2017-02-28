@@ -1,10 +1,14 @@
 node {
-    stage 'checkout sourcecode'
+    
+	stage 'checkout sourcecode'
+	{
     checkout scm
       env.PATH = "${tool 'M3'}/bin:${env.PATH}"
 	   mvnHome = tool 'M3'
+	 }  
   stage 'Build'
-	  def pom = readMavenPom file: '${env.WORKSPACE}/sbi/pom.xml'
+    {
+	  def pom = readMavenPom file: 'sbi/pom.xml'
 	    echo "${pom}"
 	  
 	  // Run the maven build
@@ -15,3 +19,4 @@ node {
       }
      }
 
+}
