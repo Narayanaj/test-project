@@ -2,8 +2,16 @@ node {
   stage 'checkout sourcecode'
     checkout scm
       env.PATH = "${tool 'M3'}/bin:${env.PATH}"
+	   mvnHome = tool 'M3'
         stage 'Build'
 	  def pom = readMavenPom file: 'sbi/pom.xml'
 	    echo "${pom}"
-	      sh "mvn -DskipTests=true clean install"
+	  
+	  // Run the maven build
+      if (isUnix()) {
+         sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
+      } else {
+         bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
+      }
      }
+
