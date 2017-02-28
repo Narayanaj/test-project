@@ -8,7 +8,8 @@ node {
 	 }  
   stage ('Build')
     {
-	  def pom = readMavenPom file: 'sbi/pom.xml'
+	 env.WORKSPACE = pwd()
+	  def pom = readMavenPom file: '${env.WORKSPACE}/sbi/pom.xml'
 	    echo "${pom}"
 	  
 	  // Run the maven build
