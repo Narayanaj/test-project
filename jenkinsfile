@@ -1,6 +1,6 @@
 node {
-  stage 'checkout sourcecode'
-    checkout scm
+ // stage 'checkout sourcecode'
+ //   checkout scm
       env.PATH = "${tool 'M3'}/bin:${env.PATH}"
 	   mvnHome = tool 'M3'
   stage 'Build'
