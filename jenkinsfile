@@ -1,6 +1,6 @@
 node {
 
-  echo "Running ${ENV.BUILD_ID} on ${ENV.WORKSPACE}" }
+  echo "Running ${ENV.BUILD_ID} on ${ENV.WORKSPACE}"
     
 	stage ('checkout sourcecode')
 	{
