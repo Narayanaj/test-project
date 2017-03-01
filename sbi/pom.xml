@@ -31,8 +31,6 @@
         <publish.crx.password>admin</publish.crx.password>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<bundle>bundle/pom.xml</bundle>
-		<content>content/pom.xml</content>
     </properties>
 
     <dependencyManagement>
@@ -248,7 +246,7 @@
         </profile>
     </profiles>
   <modules>
-    <module>${bundle}</module>
-    <module>${content}</module>
+    <!--<module>bundle</module>
+    <module>content</module>-->
   </modules>
 </project>
