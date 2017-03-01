@@ -20,7 +20,7 @@ node {
       if (isUnix()) {
          sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
       } else {
-         bat(/"${env.WORKSPACE}\sbi\pom.xml ${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean install /)
+         bat(/"${env.WORKSPACE}\sbi\pom.xml ${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean install/)
       }
      }
 
