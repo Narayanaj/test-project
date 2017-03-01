@@ -12,8 +12,8 @@ node {
     {
 	 env.WORKSPACE = pwd()
 	  def pom = readMavenPom file: 'sbi/pom.xml'
-	  def bundle = readMavenPom file: 'bundle/pom.xml'
-	  def content = readMavenPom file: 'content/pom.xml'
+	  def bundle = 'bundle/pom.xml'
+	  def content = 'content/pom.xml'
 	    echo "${pom}"
 	  
 	  // Run the maven build
