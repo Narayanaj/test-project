@@ -246,7 +246,7 @@
         </profile>
     </profiles>
   <modules>
-    <!--<module>bundle</module>
-    <module>content</module>-->
+    <module>bundle</module>
+    <module>content</module>
   </modules>
 </project>
