@@ -241,7 +241,7 @@
         </profile>
     </profiles>
   <modules>
-    <module>bundle</module>
-    <module>content</module>
+    <module>bundle/pom.xml</module>
+    <module>content/pom.xml</module>
   </modules>
 </project>
