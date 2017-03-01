@@ -13,6 +13,7 @@ node {
 	 env.WORKSPACE = pwd()
 	 
 	  def pom = readMavenPom file: 'sbi/pom.xml'
+	  def workspace = '${env.WORKSPACE}/sbi/pom.xml'
 	  def bundle = 'bundle/pom.xml'
 	  def content = 'content/pom.xml'
 	    echo "${pom}"
