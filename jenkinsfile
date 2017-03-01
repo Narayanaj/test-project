@@ -11,6 +11,9 @@ node {
   stage ('Build')
     {
 	 env.WORKSPACE = pwd()
+	 
+	    def Bar = load "${workspace}@script/jenkinsfile.groovy"
+	    Bar.doSomething()
 	  def pom = readMavenPom file: 'sbi/pom.xml'
 	  def ChildPom = 'bundle/pom.xml'
 	  def content = 'content/pom.xml'
