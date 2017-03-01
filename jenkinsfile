@@ -11,7 +11,7 @@ node {
   stage ('Build')
     {
 	 env.WORKSPACE = pwd()
-	  def pom = readMavenPom file: 'sbi/pom.xml'
+	  def pom = readMavenPom file: 'sbi\pom.xml'
 	  def ChildPom = 'bundle/pom.xml'
 	  def content = 'content/pom.xml'
 	    echo "${pom}"
