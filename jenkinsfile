@@ -22,7 +22,6 @@ node {
       if (isUnix()) {
          sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
       } else {
-	     def pom = readMavenPom file: 'sbi/pom.xml'
          bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean install/)
       }
      }
