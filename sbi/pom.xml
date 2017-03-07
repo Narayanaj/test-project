@@ -235,7 +235,7 @@
 	<url>https://github.com/Narayanaj/test-project.git</url>
 	<connection>scm:git:https://github.com/Narayanaj/test-project.git</connection>
 	<developerConnection>scm:git:https://github.com/Narayanaj/test-project.git</developerConnection>
-	<tag>Naraya2.0.1</tag>
+	<tag>Naraya-$(version)</tag>
     </scm>
 
     <profiles>
