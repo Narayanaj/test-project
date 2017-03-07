@@ -7,7 +7,7 @@
 
     <groupId>com.bank.company</groupId>
     <artifactId>sbi</artifactId>
-    <version>2.0.1</version>
+    <version>2.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>sbh - Reactor Project</name>
