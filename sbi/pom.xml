@@ -224,7 +224,10 @@
         </pluginManagement>
     </build>
 	<scm>
-        <developerConnection>scm:git:https://github.com/Narayanaj/test-project.git</developerConnection>
+	<url>scm:git:https://github.com/Narayanaj/test-project.git</url>
+	<connection>scm:git:https://github.com/Narayanaj/test-project.git</connection>
+	<developerConnection>scm:git:https://github.com/Narayanaj/test-project.git</developerConnection>
+	<tag>HEAD</tag>
     </scm>
 
     <profiles>
