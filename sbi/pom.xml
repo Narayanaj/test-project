@@ -7,7 +7,7 @@
 
     <groupId>com.bank.company</groupId>
     <artifactId>sbi</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>sbh - Reactor Project</name>
@@ -21,7 +21,7 @@
 	<url>https://github.com/Narayanaj/test-project.git</url>
 	<connection>scm:git:https://github.com/Narayanaj/test-project.git</connection>
 	<developerConnection>scm:git:https://github.com/Narayanaj/test-project.git</developerConnection>
-	<tag>v1.0.0</tag>
+	<tag>HEAD</tag>
     </scm>
 
     <!-- ====================================================================== -->

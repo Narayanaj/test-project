@@ -7,7 +7,7 @@
     <parent>
         <groupId>com.bank.company</groupId>
         <artifactId>sbi</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1-SNAPSHOT</version>
     </parent>
 
     <!-- ====================================================================== -->
