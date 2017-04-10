@@ -59,7 +59,13 @@
             <groupId>org.apache.sling</groupId>
             <artifactId>org.apache.sling.jcr.api</artifactId>
         </dependency>
-    </dependencies>
+		<!-- https://mvnrepository.com/artifact/org.codehaus.mojo/sonar-maven-plugin -->
+       <dependency>
+       <groupId>org.codehaus.mojo</groupId>
+       <artifactId>sonar-maven-plugin</artifactId>
+       <version>3.3.0.603</version>
+       </dependency>
+  </dependencies>
 
     <!-- ====================================================================== -->
     <!-- B U I L D D E F I N I T I O N -->
@@ -104,11 +110,6 @@
                         *.impl
                     </excludePackageNames>
                  </configuration>
-            </plugin>
-			<plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>sonar-maven-plugin</artifactId>
-            <version>2.2</version>
             </plugin>
         </plugins>
     </build>
