@@ -3,11 +3,11 @@ package com.bank.company;
 /**
  * A simple service interface
  */
-public interface HelloService {
+ublic interface HelloService {
     
     /**
      * @return the name of the underlying JCR repository implementation
      */
     public String getRepositoryName();
-    jalla()
+
 }
