@@ -3,7 +3,7 @@ package com.bank.company;
 /**
  * A simple service interface
  */
-ublic interface HelloService {
+public interface HelloService {
     
     /**
      * @return the name of the underlying JCR repository implementation
